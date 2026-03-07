@@ -3,18 +3,34 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import WhoWeAre from "./pages/WhoWeAre";
+import WhatWeDo from "./pages/WhatWeDo";
+import Gallery from "./pages/Gallery";
+import ContactUs from "./pages/ContactUs";
 
 
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <Navigation />
+      <Switch>
+        <Route path={"\\"} component={Home} />
+        <Route path={"/about-us"} component={AboutUs} />
+        <Route path={"/who-we-are"} component={WhoWeAre} />
+        <Route path={"/what-we-do"} component={WhatWeDo} />
+        <Route path={"/gallery"} component={Gallery} />
+        <Route path={"/contact-us"} component={ContactUs} />
+        <Route path={"/404"} component={NotFound} />
+        {/* Final fallback route */}
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+    </>
   );
 }
 
@@ -32,7 +48,9 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <div className="flex flex-col min-h-screen">
+            <Router />
+          </div>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

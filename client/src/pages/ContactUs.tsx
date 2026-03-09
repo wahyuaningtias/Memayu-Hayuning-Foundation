@@ -94,14 +94,14 @@ export default function ContactUs() {
               <div className="space-y-4">
                 {/* Phone */}
                 <a
-                  href="tel:+6234130077704"
+                  href="tel:+6285236169486"
                   className="flex items-start gap-4 p-4 rounded-lg bg-gradient-to-br from-green-50 to-amber-50 hover:shadow-md transition-shadow group"
                 >
                   <Phone className="w-6 h-6 text-green-900 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
                     <p className="text-green-900 font-medium">
-                      (+62) 341-300 77 04
+                      +62 852 3616 9486
                     </p>
                     <p className="text-sm text-gray-600 mt-1">
                       Call us during business hours
@@ -111,14 +111,14 @@ export default function ContactUs() {
 
                 {/* Primary Email */}
                 <a
-                  href="mailto:hello@memayuhayuning.org"
+                  href="mailto:hello@memayuhayuning.asia"
                   className="flex items-start gap-4 p-4 rounded-lg bg-gradient-to-br from-green-50 to-amber-50 hover:shadow-md transition-shadow group"
                 >
                   <Mail className="w-6 h-6 text-green-900 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="font-semibold text-gray-900">Email</p>
                     <p className="text-green-900 font-medium break-all">
-                      hello@memayuhayuning.org
+                      hello@memayuhayuning.asia
                     </p>
                     <p className="text-sm text-gray-600 mt-1">
                       Primary contact email

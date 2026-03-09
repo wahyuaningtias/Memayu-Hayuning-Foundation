@@ -94,19 +94,19 @@ export default function Footer() {
               <h4 className="text-lg font-bold">Contact</h4>
               <div className="space-y-3">
                 <a
-                  href="tel:+6234130077704"
+                  href="tel:+6285236169486"
                   className="flex items-start gap-3 text-amber-100 hover:text-white transition-colors group"
                 >
                   <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm">(+62) 341-300 77 04</span>
+                  <span className="text-sm">+62 852 3616 9486</span>
                 </a>
                 <a
-                  href="mailto:hello@memayuhayuning.org"
+                  href="mailto:hello@memayuhayuning.asia"
                   className="flex items-start gap-3 text-amber-100 hover:text-white transition-colors group"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm break-all">
-                    hello@memayuhayuning.org
+                    hello@memayuhayuning.asia
                   </span>
                 </a>
               </div>

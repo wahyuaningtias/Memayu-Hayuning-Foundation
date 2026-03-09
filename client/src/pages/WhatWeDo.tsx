@@ -89,19 +89,7 @@ export default function WhatWeDo() {
     },
   ];
 
-  const partners = [
-    "TAMTF",
-    "STADA",
-    "tcfLEARN",
-    "FORWARD",
-    "Active Health Solutions",
-    "PlasmaTerra",
-    "Green Nexus",
-    "Thribe",
-    "Omphalos Health",
-    "MEDIERA",
-    "TSD Ventures",
-  ];
+  const partners = [];
 
   return (
     <div className="min-h-screen flex flex-col">

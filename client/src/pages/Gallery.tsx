@@ -61,13 +61,13 @@ export default function Gallery() {
     {
       title: "Official Visitation of SCII Partners 2024",
       description:
-        "A significant event bringing together key partners and stakeholders from the Strategic Collaborations and Innovations Initiative. Providing opportunities for meaningful discussions and collaboration.",
+        "A past initiative bringing together key partners and stakeholders from the Strategic Collaborations and Innovations Initiative. This event provided opportunities for meaningful discussions and collaboration during that period.",
       image: "placeholder",
     },
     {
-      title: "Official Visitation of SCII Partners 2025",
+      title: "Official Visitation of SCII Partners 2025 (Past Initiative)",
       description:
-        "As part of our Strategic Insight Programme, we're connecting our team with more universities and local partners to collaboratively build a brighter future for East Java.",
+        "A past initiative where we connected our team with universities and local partners through our Strategic Insight Programme. This collaboration was part of our efforts to build a brighter future for East Java during that period.",
       image: "placeholder",
     },
   ];

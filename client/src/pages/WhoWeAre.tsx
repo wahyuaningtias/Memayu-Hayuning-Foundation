@@ -188,19 +188,7 @@ export default function WhoWeAre() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              As a member of the Board of Management at Memayu Hayuning Foundation,
-              Aldrin Tee contributed to the strategic direction and governance of the
-              organization. He played a key role in shaping policies, providing
-              oversight, and ensuring the foundation's activities aligned with its
-              mission to deliver sustainable and impactful initiatives.
-            </p>
-
-            <p className="text-lg text-gray-700 leading-relaxed">
-              With a strong commitment to excellence and social responsibility, he
-              collaborated with other board members to set priorities, allocate
-              resources, and evaluate organizational performance. His expertise and
-              leadership helped guide the foundation in achieving its long-term goals,
-              fostering innovation, and strengthening its impact on the community.
+              Aldrin Tee served as a member of the Board of Management at Memayu Hayuning Foundation from November 2022 to December 2025. During his tenure, he contributed to the organization's strategic discussions and governance, supporting the foundation's mission to develop sustainable and impactful community initiatives.
             </p>
           </div>
         </div>

@@ -126,22 +126,6 @@ export default function ContactUs() {
                   </div>
                 </a>
 
-                {/* Secondary Email */}
-                <a
-                  href="mailto:hellomemayuhayuning@gmail.com"
-                  className="flex items-start gap-4 p-4 rounded-lg bg-gradient-to-br from-green-50 to-amber-50 hover:shadow-md transition-shadow group"
-                >
-                  <Mail className="w-6 h-6 text-green-900 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                  <div>
-                    <p className="font-semibold text-gray-900">Alternative Email</p>
-                    <p className="text-green-900 font-medium break-all">
-                      hellomemayuhayuning@gmail.com
-                    </p>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Secondary contact option
-                    </p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>

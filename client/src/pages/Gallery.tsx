@@ -55,7 +55,7 @@ export default function Gallery() {
     {
       title: "MHF x TAMTF Singapore: Hybrid Business Conference",
       description:
-        "A collaborative effort bringing together industry leaders, entrepreneurs, and creatives. With both in-person and virtual participation, providing a dynamic platform for sharing insights and exploring creative solutions.",
+        "A collaborative event that brought together industry leaders, entrepreneurs, and creatives. With both in-person and virtual participation, it provided a dynamic platform for sharing insights and exploring creative solutions.",
       image: "placeholder",
     },
     {

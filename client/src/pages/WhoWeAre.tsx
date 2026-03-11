@@ -172,28 +172,6 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      {/* Former Board Member */}
-      <section className="py-20 md:py-32 px-4 md:px-8 bg-gradient-to-b from-amber-50 to-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
-            Our Former Board Member
-          </h2>
-
-          <div className="bg-white rounded-lg shadow-sm p-8 md:p-12 space-y-6">
-            <div className="space-y-2">
-              <h3 className="text-3xl font-bold text-gray-900">Aldrin Tee</h3>
-              <p className="text-green-900 font-semibold">
-                November 2022 - December 2025
-              </p>
-            </div>
-
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Aldrin Tee served as a member of the Board of Management at Memayu Hayuning Foundation from November 2022 to December 2025. During his tenure, he contributed to the organization's strategic discussions and governance, supporting the foundation's mission to develop sustainable and impactful community initiatives.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 md:py-24 px-4 md:px-8 bg-green-900 text-white">
         <div className="max-w-4xl mx-auto text-center space-y-6">

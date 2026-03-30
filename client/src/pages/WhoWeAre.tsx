@@ -14,18 +14,18 @@ export default function WhoWeAre() {
     {
       name: "Wahyu Aning Tias",
       role: "Founder & Board Member",
-      bio: "Public health strategist and social enterprise founder dedicated to advancing community-driven solutions for sustainable development. Her work focuses on building innovative models that integrate public health, local economic empowerment, and sustainable food systems to create lasting social impact.",
-      image: "placeholder",
-    },
-    {
-      name: "Stefanus Satrio",
-      role: "C-Suite Executive",
-      bio: "Dynamic entrepreneur and creative professional with diverse background spanning business ownership, design, and music production. Founder of BYAKKO Production House and CRM specialist for key partners in medical technology, waste management, and agriculture.",
-      image: "placeholder",
+      bio: "Dedicated public health strategist and community engagement specialist passionate about creating a healthier, more equitable world. Founder of a social business startup committed to addressing systemic issues through innovative, sustainable solutions.",
+      image: "/wahyu-aning-tias.png",
     },
   ];
 
   const iaMembers = [
+    {
+      name: "Stefanus Satrio",
+      role: "IA Member - Business & Operations",
+      bio: "Dynamic entrepreneur and creative professional with diverse background spanning business ownership, design, and music production. Founder of BYAKKO Production House and CRM specialist for key partners in medical technology, waste management, and agriculture.",
+      image: "placeholder",
+    },
     {
       name: "Novika Sari Dwi Cahyani",
       role: "IA Member - Financial & Operations",
@@ -129,11 +129,19 @@ export default function WhoWeAre() {
                 key={index}
                 className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="h-64 bg-gray-200 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <p className="text-lg font-semibold">Team Photo</p>
-                    <p className="text-sm">Placeholder</p>
-                  </div>
+                <div className="h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
+                  {member.image !== "placeholder" ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="text-center text-gray-500">
+                      <p className="text-lg font-semibold">Team Photo</p>
+                      <p className="text-sm">Placeholder</p>
+                    </div>
+                  )}
                 </div>
                 <div className="p-8 space-y-4">
                   <h3 className="text-2xl font-bold text-gray-900">
@@ -182,15 +190,14 @@ export default function WhoWeAre() {
             We're always looking for passionate individuals and organizations to join
             our mission of creating sustainable change.
           </p>
-          <Link href="/contact-us">
-            <Button
-              size="lg"
-              className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
-            >
-              Get in Touch
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
+            onClick={() => window.location.href = '/contact-us'}
+          >
+            Get in Touch
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
         </div>
       </section>
     </div>

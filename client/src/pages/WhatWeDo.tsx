@@ -89,7 +89,7 @@ export default function WhatWeDo() {
     },
   ];
 
-  const partners = [];
+  const partners: any[] = [];
 
   return (
     <div className="min-h-screen flex flex-col">

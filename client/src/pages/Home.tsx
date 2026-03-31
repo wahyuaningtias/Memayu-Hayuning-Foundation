@@ -55,24 +55,22 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/about-us">
-              <Button
-                size="lg"
-                className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
-              >
-                Learn More
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-            <Link href="/contact-us">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10"
-              >
-                Get in Touch
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
+              onClick={() => window.location.href = '/about-us'}
+            >
+              Learn More
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white/10"
+              onClick={() => window.location.href = '/contact-us'}
+            >
+              Get in Touch
+            </Button>
           </div>
         </div>
 
@@ -168,23 +166,21 @@ export default function Home() {
             communities across Indonesia and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/who-we-are">
-              <Button
-                size="lg"
-                className="bg-green-900 hover:bg-green-800 text-white font-semibold"
-              >
-                Meet Our Team
-              </Button>
-            </Link>
-            <Link href="/what-we-do">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-green-900 text-green-900 hover:bg-green-50"
-              >
-                Explore Our Programs
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="bg-green-900 hover:bg-green-800 text-white font-semibold"
+              onClick={() => window.location.href = '/who-we-are'}
+            >
+              Meet Our Team
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-green-900 text-green-900 hover:bg-green-50"
+              onClick={() => window.location.href = '/what-we-do'}
+            >
+              Explore Our Programs
+            </Button>
           </div>
         </div>
       </section>

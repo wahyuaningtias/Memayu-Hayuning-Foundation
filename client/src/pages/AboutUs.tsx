@@ -140,15 +140,14 @@ export default function AboutUs() {
                   </span>
                 </li>
               </ul>
-              <Link href="/what-we-do">
-                <Button
-                  size="lg"
-                  className="bg-green-900 hover:bg-green-800 text-white font-semibold"
-                >
-                  Explore Our Programs
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
+              <Button
+                size="lg"
+                className="bg-green-900 hover:bg-green-800 text-white font-semibold"
+                onClick={() => window.location.href = '/what-we-do'}
+              >
+                Explore Our Programs
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -164,15 +163,14 @@ export default function AboutUs() {
             Whether you want to learn, contribute, or partner with us, there are many
             ways to be part of our mission.
           </p>
-          <Link href="/contact-us">
-            <Button
-              size="lg"
-              className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
-            >
-              Get in Touch
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
+            onClick={() => window.location.href = '/contact-us'}
+          >
+            Get in Touch
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
         </div>
       </section>
     </div>

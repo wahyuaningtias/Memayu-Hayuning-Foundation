@@ -301,15 +301,14 @@ export default function WhatWeDo() {
             Explore our initiatives and find the perfect opportunity to grow, learn,
             and make a difference.
           </p>
-          <Link href="/contact-us">
-            <Button
-              size="lg"
-              className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
-            >
-              Get Started
-              <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            className="bg-white text-green-900 hover:bg-gray-100 font-semibold"
+            onClick={() => window.location.href = '/contact-us'}
+          >
+            Get Started
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Button>
         </div>
       </section>
     </div>

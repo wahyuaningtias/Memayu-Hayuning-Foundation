@@ -15,7 +15,7 @@ export default function WhoWeAre() {
       name: "Wahyu Aning Tias",
       role: "Founder & Board Member",
       bio: "Dedicated public health strategist and community engagement specialist passionate about creating a healthier, more equitable world. Founder of a social business startup committed to addressing systemic issues through innovative, sustainable solutions.",
-      image: "/wahyu-aning-tias.png",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663031207151/D7aNrb3LDda5wHbLSwdRLV/wahyu-aning-tias_99dadd08.png",
     },
   ];
 

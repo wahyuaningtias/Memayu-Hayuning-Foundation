@@ -32,39 +32,38 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/">
-            <a className="flex items-center gap-2 font-bold text-xl text-green-900 hover:text-green-800 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-green-900 flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-amber-100" />
-              </div>
-              <span className="hidden sm:inline">MHF</span>
-            </a>
+          <Link href="/" className="flex items-center gap-2 font-bold text-xl text-green-900 hover:text-green-800 transition-colors">
+            <div className="w-10 h-10 rounded-lg bg-green-900 flex items-center justify-center">
+              <Leaf className="w-6 h-6 text-amber-100" />
+            </div>
+            <span className="hidden sm:inline">MHF</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                    isActive(link.href)
-                      ? "bg-green-100 text-green-900"
-                      : "text-gray-700 hover:bg-gray-100"
-                  }`}
-                >
-                  {link.label}
-                </a>
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                  isActive(link.href)
+                    ? "bg-green-100 text-green-900"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`}
+              >
+                {link.label}
               </Link>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link href="/contact-us">
-              <Button className="bg-green-900 hover:bg-green-800 text-white font-semibold">
-                Contact Us
-              </Button>
-            </Link>
+            <Button
+              className="bg-green-900 hover:bg-green-800 text-white font-semibold"
+              onClick={() => window.location.href = '/contact-us'}
+            >
+              Contact Us
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,26 +83,28 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2 border-t border-gray-200">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
-                    isActive(link.href)
-                      ? "bg-green-100 text-green-900"
-                      : "text-gray-700 hover:bg-gray-100"
-                  }`}
-                >
-                  {link.label}
-                </a>
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`block px-4 py-3 rounded-lg font-medium transition-colors ${
+                  isActive(link.href)
+                    ? "bg-green-100 text-green-900"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
               </Link>
             ))}
-            <Link href="/contact-us">
-              <a onClick={() => setIsOpen(false)}>
-                <Button className="w-full bg-green-900 hover:bg-green-800 text-white font-semibold">
-                  Contact Us
-                </Button>
-              </a>
-            </Link>
+            <Button
+              className="w-full bg-green-900 hover:bg-green-800 text-white font-semibold"
+              onClick={() => {
+                setIsOpen(false);
+                window.location.href = '/contact-us';
+              }}
+            >
+              Contact Us
+            </Button>
           </div>
         )}
       </div>

@@ -128,13 +128,12 @@ export default function WhoWeAre() {
               <div
                 key={index}
                 className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
+              >                <div className="h-80 bg-gray-200 flex items-center justify-center overflow-hidden">
                   {member.image !== "placeholder" ? (
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   ) : (
                     <div className="text-center text-gray-500">
